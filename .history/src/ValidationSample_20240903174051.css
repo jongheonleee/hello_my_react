@@ -1,0 +1,7 @@
+.success {
+    background-attachment:lightgreen;
+}
+
+.failure {
+    background-color: lightcoral;
+}

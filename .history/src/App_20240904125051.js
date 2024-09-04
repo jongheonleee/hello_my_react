@@ -2,8 +2,6 @@
 import { Component }  from 'react';
 import LifeCycleSample from './learning/LifeCycleSample';
 import ErrorBoundary from './learning/ErrorBoundary';
-import IterationSample from './learning/IterationSample';
-import MyIterationSample from './practice/MyIteartionSample';
 
 // 랜덤 색상 생성기 
 function getRandomColor() {
@@ -25,13 +23,12 @@ class App extends Component {
   // 컴포넌트 생성  
   render() {
     return (
-      // <div>
-      //   <button onClick={this.handleClick}>랜덤 색상</button> 
-      //   <ErrorBoundary>
-      //     <LifeCycleSample color={this.state.color}/>
-      //   </ErrorBoundary>
-      // </div>
-      <MyIterationSample/>
+      <div>
+        <button onClick={this.handleClick}>랜덤 색상</button> 
+        <ErrorBoundary>
+          <LifeCycleSample color={this.state.color}/>
+        </ErrorBoundary>
+      </div>
     );
   }
 }
